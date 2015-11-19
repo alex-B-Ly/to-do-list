@@ -12,6 +12,7 @@
 
 .item-description{
 	font-size: 1.3em;
+	transition: all 3s;
 }
 
 .del-button{

@@ -15,6 +15,9 @@ $('.del-button').on('click', function(){
 // Checkbox strikethrough and removal
 
 $('.check').on('click', function(){
-  $(this).closest('td').next('td').css('text-decoration', 'line-through');
+  $(this).closest('td').next('td').css({
+    textDecoration: 'line-through',
+    color: '#B2ABB6'
+  });
   $(this).remove();
 });
