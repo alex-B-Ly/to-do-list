@@ -1,0 +1,65 @@
+<html>
+<head>
+	<title>To Do List</title>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+
+<body>
+
+	<div class="container">
+		<h1 class="text-center">To Do List</h1>
+	</div>
+
+	<div class="container">
+
+		<!-- Instead of titles, add an input field and add button to put new items into the table -->
+
+		<div class="row titles">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<h3 class="text-center">Items</h3>
+			</div>
+		</div>
+
+		<!-- TABLE -->
+
+		<div class="row">
+			<table class="table table-responsive table-striped to-do-list">
+				<tr>
+					<td class="col-md-1 col-lg-1 text-center">
+						<input type="checkbox">
+					</td>
+					<td class="col-md-10 col-lg-10 item-description">
+						1. Stuff To Do Stuff To Do Stuff To Do
+					</td>
+					<td class="col-md-1 col-lg-1 text-right del-button-td">
+						<button class="btn btn-default del-button">X</button>
+					</td>
+				</tr>
+				<tr>
+					<td class="col-md-1 col-lg-1 text-center">
+						<input type="checkbox">
+					</td>
+					<td class="col-md-10 col-lg-10 item-description">
+						2. Stuff To Do Stuff To Do Stuff To Do
+					</td>
+					<td class="col-md-1 col-lg-1 text-right del-button-td">
+						<button class="btn btn-default del-button">X</button>
+					</td>
+				</tr>
+			</table>
+
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="js/functionality.js"></script>
+</body>
+</html>
