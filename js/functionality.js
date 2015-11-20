@@ -1,3 +1,10 @@
+// Add row
+
+$('#add-button').click(function() {
+  /* Act on the event */
+  
+});
+
 // Delete blinker and delete row
 
 $('.del-button').hover(function() {
@@ -6,7 +13,7 @@ $('.del-button').hover(function() {
 	$(this).text('X');
 });
 
-$('.del-button').on('click', function(){
+$(document).on('click', '.del-button', function(){
 	$(this).closest('tr').fadeOut('slow', function() {
 		$(this).remove();
 	});;
@@ -14,7 +21,7 @@ $('.del-button').on('click', function(){
 
 // Checkbox strikethrough and removal
 
-$('.check').on('click', function(){
+$(document).on('click', '.check', function(){
   $(this).closest('td').next('td').css({
     textDecoration: 'line-through',
     color: '#B2ABB6'

@@ -1,6 +1,32 @@
 .inputter,
-.add-button{
+#add-button{
 	margin-top: 20px;
+}
+
+#add-button:hover{
+	animation: addHover 0.75s 1;
+	font-weight: 600;
+	background: #09FF1F;
+	color: #2231FF;
+	transition: background 2s, color 3s, font-weight 1.5s;
+}
+
+@keyframes addHover{
+	0% {
+		box-shadow: inset 0 0 0 8px #B2ABB6;
+	}
+	25% {
+		box-shadow: inset 0 0 0 6px #98929B;
+	}
+	50% {
+		box-shadow: inset 0 0 0 4px #847F87;
+	}
+	75% {
+		box-shadow: inset 0 0 0 3px #4A474B;
+	}
+	100% {
+		box-shadow: inset 0 0 0 2px #222123;
+	}
 }
 
 .to-do-list{
