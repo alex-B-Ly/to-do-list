@@ -1,7 +1,7 @@
 // Add row
 
 $('#add-button').click(function() {
-  /* Act on the event */
+  alert('hi');
   
 });
 
