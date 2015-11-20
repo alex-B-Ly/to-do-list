@@ -1,7 +1,11 @@
 // Add row
 
 $('#add-button').click(function() {
-  alert('hi');
+  var newRow = "<tr></tr>";
+  var td = "<td></td>";
+
+  $('table.to-do-list').prepend(newRow);
+
   
 });
 
