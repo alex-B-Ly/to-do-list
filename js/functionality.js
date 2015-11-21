@@ -13,6 +13,8 @@ $('#add-button').click(function() {
   tr.append(itemTd);
   tr.append(delTd);
   newRow.append(tr);
+
+  $('.inputter').val('');
 });
 
 // Delete blinker and delete row
