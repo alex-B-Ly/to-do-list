@@ -7,6 +7,8 @@ $('#add-button').click(function() {
   var itemTd = $('<td class="col-md-10 col-lg-10 item-description"></td>');
   var delTd = $('<td class="col-md-1 col-lg-1 text-right del-button-td"><button class="btn btn-default del-button">X</button></td>');
 
+  itemTd.text($('.inputter').val());
+
   tr.append(checkTd);
   tr.append(itemTd);
   tr.append(delTd);
