@@ -14,16 +14,22 @@ $('#add-button').click(function() {
   tr.append(delTd);
   newRow.append(tr);
 
+  delHover();
+
   $('.inputter').val('');
 });
 
 // Delete blinker and delete row
 
-$('.del-button').hover(function() {
-	$(this).text('Delete');
-}, function() {
-	$(this).text('X');
-});
+function delHover(){
+  $('.del-button').hover(function() {
+  	$(this).text('Delete');
+  }, function() {
+  	$(this).text('X');
+  });
+}
+
+delHover();
 
 $(document).on('click', '.del-button', function(){
 	$(this).closest('tr').fadeOut('slow', function() {
