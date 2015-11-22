@@ -9,10 +9,19 @@ $('#add-button').click(function() {
 
   
   if($('.inputter').val()===''){
-    // TODO Replace alert function with a message
-    alert('empty');
+    if($('#so-empty')){
+      $('#so-empty').remove();
+    }
+    var msg = $('<div id="so-empty"></div>');
+    msg.addClass('empty-message').text('Please enter something.');
+    $('.inputter').after(msg);
+
     return;
   }else{
+    if($('#so-empty')){
+      $('#so-empty').remove();
+    }
+
     itemTd.text($('.inputter').val());
 
     tr.append(checkTd);
