@@ -3,6 +3,10 @@
 	margin-top: 20px;
 }
 
+.inputter{
+	outline: none;
+}
+
 #add-button:hover{
 	animation: addHover 0.75s 1;
 	font-weight: 600;
