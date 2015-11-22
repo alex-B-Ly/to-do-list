@@ -1,3 +1,8 @@
+body{
+	background: url('../img/sos.png') repeat;	/* This pattern is downloaded from www.subtlepatterns.com 
+ If you need more, that's where to get'em. */
+}
+
 .indoor{
 	background: #D9E5E7;
 }
@@ -11,7 +16,7 @@
 }
 
 .urgent{
-	animation: ohcrap 15s infinite;
+	animation: ohcrap 12s infinite;
 	font-weight: bold;
 }
 
@@ -39,12 +44,15 @@
 	border-radius: 10px;
 }
 
+#add-button{
+	transition: background 2s, color 3s, font-weight 1.5s;
+}
+
 #add-button:hover{
 	animation: addHover 0.75s 1;
 	font-weight: 600;
-	background: #09FF1F;
+	background: #58FFDA;
 	color: #2231FF;
-	transition: background 2s, color 3s, font-weight 1.5s;
 }
 
 @keyframes addHover{
