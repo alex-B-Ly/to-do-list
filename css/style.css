@@ -1,11 +1,42 @@
+.indoor{
+	background: #D9E5E7;
+}
+
+.outdoor{
+	background: #C1FFEB;
+}
+
+.other{
+	background: #FAFFB8;
+}
+
+.urgent{
+	animation: ohcrap 15s infinite;
+	font-weight: bold;
+}
+
+@keyframes ohcrap{
+	0% {background-color: #FFB3A2}
+	50% {background-color: #FF3320}
+	100% {background-color: #FFB3A2}
+}
+
 .inputter,
-#add-button{
+#add-button,
+#category-select{
 	margin-top: 20px;
 	outline: none;
 }
 
 .empty-message{
 	font-size: 1.2em;
+}
+
+#category-select{
+	background: transparent;
+	font-size: 1.2em;
+	width: 100%;
+	border-radius: 10px;
 }
 
 #add-button:hover{
@@ -74,7 +105,8 @@
 
 @media screen and (max-width:560px){
 	.inputter,
-	#add-button{
+	#add-button,
+	#category-select{
 		width: 120px;
 		margin-left: -30px;
 	}

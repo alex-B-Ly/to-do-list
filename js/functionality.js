@@ -6,7 +6,7 @@ $('#add-button').click(function() {
   var checkTd = $('<td class="col-md-1 col-lg-1 text-center"><input class="check" type="checkbox"></td>');
   var itemTd = $('<td class="col-md-10 col-lg-10 item-description"></td>');
   var delTd = $('<td class="col-md-1 col-lg-1 text-right del-button-td"><button class="btn btn-default del-button">X</button></td>');
-
+  var categorySelected = $('#category-select option:selected').text().toLowerCase();
   
   if($('.inputter').val()===''){
     if($('#so-empty')){
@@ -27,6 +27,17 @@ $('#add-button').click(function() {
     tr.append(checkTd);
     tr.append(itemTd);
     tr.append(delTd);
+
+    if(categorySelected === 'indoor'){
+      tr.addClass('indoor');
+    }else if(categorySelected === 'outdoor'){
+      tr.addClass('outdoor');
+    }else if(categorySelected === 'other'){
+      tr.addClass('other');
+    }else if(categorySelected === 'urgent'){
+      tr.addClass('urgent');
+    }
+
     newRow.append(tr.hide().fadeIn(750));
   }
 
