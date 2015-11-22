@@ -21,22 +21,10 @@ $('#add-button').click(function() {
     newRow.append(tr.hide().fadeIn(750));
   }
 
-  delHover();
-
   $('.inputter').val('');
 });
 
-// Delete blinker and delete row
-
-function delHover(){
-  $('.del-button').hover(function() {
-  	$(this).text('Delete');
-  }, function() {
-  	$(this).text('X');
-  });
-}
-
-delHover();
+// Remove row
 
 $(document).on('click', '.del-button', function(){
 	$(this).closest('tr').fadeOut('slow', function() {
