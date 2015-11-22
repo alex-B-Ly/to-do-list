@@ -7,12 +7,19 @@ $('#add-button').click(function() {
   var itemTd = $('<td class="col-md-10 col-lg-10 item-description"></td>');
   var delTd = $('<td class="col-md-1 col-lg-1 text-right del-button-td"><button class="btn btn-default del-button">X</button></td>');
 
-  itemTd.text($('.inputter').val());
+  
+  if($('.inputter').val()===''){
+    // TODO Replace alert function with a message
+    alert('empty');
+    return;
+  }else{
+    itemTd.text($('.inputter').val());
 
-  tr.append(checkTd);
-  tr.append(itemTd);
-  tr.append(delTd);
-  newRow.append(tr);
+    tr.append(checkTd);
+    tr.append(itemTd);
+    tr.append(delTd);
+    newRow.append(tr.hide().fadeIn(750));
+  }
 
   delHover();
 
